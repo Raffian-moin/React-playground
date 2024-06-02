@@ -4,9 +4,15 @@ function App() {
 
   return (
     <>
-      <p>
-        Click on the Vite and React logos to learn more
-      </p>
+      <div>
+        <Link to={`/`}>Home page</Link>
+      </div>
+      <div>
+        <Link to={`ref`}>Ref</Link>
+      </div>
+      <div>
+        <Link to={`component`}>Component</Link>
+      </div>
 
       <Link to={`contact/2`}>Your Friend</Link>
     </>

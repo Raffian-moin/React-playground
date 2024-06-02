@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from './App.jsx';
 import './index.css';
 import Ref from './topics/Ref.jsx';
+import Component from './topics/Component.jsx';
+import ParentComponent from './topics/ParentComponent.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
   {
     path: "/ref",
     element: <Ref />,
+  },
+  {
+    path: "/component",
+    element: <Component />,
+  },
+  {
+    path: "component/props",
+    element: <ParentComponent />,
   },
 ]);
 
